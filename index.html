@@ -35,6 +35,23 @@
             </div>
         </section>
     </main>
+    <div id="terminal-model" class="terminal-overlay hidden">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <span>root@jackforce:~</span>
+                <button id="close-terminal" class="close-btn">X</button>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <p>Welcome To JackOS v1.0.0</p>
+                <p>Type "help" to see available commands or anything else to test the echo</p>
+            </div>
+            <div class="terminal-input-line">
+                <span class="prompt">jackforce@admin:$</span>
+                <input type="text" id="terminal-input" autocomplete="off" autofocus>
+            </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

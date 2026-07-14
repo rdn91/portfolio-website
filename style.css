@@ -128,6 +128,64 @@ nav {
     color: beige ;
     border-color: beige;
 }
+.terminal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0 ,0 ,0.8);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.terminal-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.terminal-window {
+    width: 600px;
+    max-width: 90%;
+    background-color: #0c0c0c;
+    border: 1px solid #333;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.terminal-header {
+    background-color: #1a1a1a;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    color: #888;
+}
+.terminal-body {
+    color: white;
+}
+.close-btn {
+    background: none; border: none; color: red;
+    font-weight: bold; cursor: pointer;
+}
+.terminal-body {
+    display: flex;
+    padding: 0px 15px 15px;
+    background-color: #0c0c0c;
+    flex-direction: column;
+}
+.prompt {
+    color: #0f0; margin-right: 10px;
+}
+#terminal-input {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color:  white;
+    outline: none;
+}
+#terminal-output {
+    color: white;
+}
 .project-card {
     background-color: var(--dark-grey) ;
     border: 1px solid #201f33;
