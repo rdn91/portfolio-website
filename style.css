@@ -395,3 +395,6 @@ nav {
     background-color: #0c0c0c;
     flex-direction: column;
 }
+@media (width=768px) {
+    
+}
